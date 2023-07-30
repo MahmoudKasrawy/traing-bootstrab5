@@ -1,0 +1,187 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red: #ff3150;
+    --gold: #ffc400;
+    --sec:#eff7fa;
+}
+a{
+    text-decoration: none;
+
+}
+.navbar {
+    width: 100%;
+    background-color: var(--dark-color) !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.search i {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: rgb(253, 253, 252) !important;
+    font-size: 25px;
+    border-color: var(--green-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/**/
+.landing {
+    background-color: var(--dark-color);
+    min-height: 100vh;
+
+}
+
+.main-btn {
+    background-color: var(--red);
+
+    color: var(--gold);
+    padding: 0.5rem 1rem;
+   
+}
+.main-btn:hover{
+    color: var(--gold);
+    background-color: var(--red);
+}
+/**/
+.main-title i{
+    color: var(--gold);
+    font-size: 100px;
+}
+.main-title::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color:var(--sec) ;
+}
+.icon-holder .icon{
+    color: var(--green-color);
+    
+}
+.feet h4{
+color: var(--gold);
+}
+/**/
+.our-work{
+    background-color: var(--sec);
+}
+.our-work ul .active{
+    background-color: var(--red);
+    color:var(--gold) ;
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc54;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before{
+    transform: translateX(0);
+}
+/**/
+.stuff .desc{
+    max-width: 500px;
+}
+/**/
+.our-team{
+    background-color: var(--sec);
+}
+.our-team h4{
+    color: var(--gold);
+}
+
+.our-team .box h3{
+background-color: var(--green-color);
+padding: 12px !important;
+}
+
+/**/
+.project{
+    background-color:  var(--dark-color);
+}
+/**/
+.sub{
+    background-color: var(--gold);
+}
+.sub input{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.sub input:focus{
+    outline: none;
+}
+.sub ::placeholder{
+    color: white;
+}
+.sub .btn{
+    background-color: var(--dark-color) !important;
+    color: var(--gold) !important;
+    border: none;
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.contact li a{
+
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 40%;
+    transition: 0.3s;
+}
+.contact li a:hover{
+    color: var(--gold);
+}
